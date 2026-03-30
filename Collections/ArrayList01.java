@@ -1,6 +1,7 @@
 package Collections;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * ArrayList Basics
@@ -9,27 +10,54 @@ import java.util.ArrayList;
 public class ArrayList01 {
     public static void main(String[] args) {
         // Creating ArrayList
-        ArrayList<String> list = new ArrayList<>();
+        ArrayList<Integer> list= new ArrayList<>();
+        //to add something
+        list.add(1);//o
+        list.add(5);//1
+        list.add(80);//2
+        /*lets insert 50 inn between 5 and 80
+        list.add(2,50);
+        for(int x: list){
+            System.out.println(x);
+        }   */
+        list.set(2,40);
+        System.out.println(list);//it  replace the elemnt do not shift
 
-        // Adding elements
-        list.add("Java");
-        list.add("Python");
-        list.add("JavaScript");
 
-        // Accessing elements
-        System.out.println("First element: " + list.get(0));
 
-        // Size
-        System.out.println("Total elements: " + list.size());
 
-        // Iterating
-        System.out.println("\nAll elements:");
-        for(String lang : list) {
-            System.out.println("- " + lang);
-        }
 
-        // Remove element
-        list.remove("Python");
-        System.out.println("\nAfter removing Python: " + list);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//       //to get something
+//        System.out.println(list.get(0));
+//        //to get size
+       System.out.println("size is:"+list.size());
+//        //to print everything
+//        for(int i=0;i< list.size();i++){
+//            System.out.println(list.get(i));
+//
+//        }
+////        for(int x:list){
+////            System.out.println(x);
+////        }
+//        //check for existance
+//        System.out.println(list.contains(50));//true/false
+//        list.remove(2);//removes  item in the index 2
+//        for(int x:list){
+//            System.out.println(x);
+//        }
     }
 }
